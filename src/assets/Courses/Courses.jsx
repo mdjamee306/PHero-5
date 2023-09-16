@@ -2,10 +2,14 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Carts from "../Carts/Carts";
+// // toast 
+// import toast, { Toaster } from 'react-hot-toast'; 
 
 const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [selectItem, setSelectItem] = useState([]);
+    const [remaining, setRemaining] = useState(0);
+    const [total, setTotal] = useState(20);
     useEffect(() => {
         fetch('./data.json')
             .then(res => res.json())
@@ -15,7 +19,25 @@ const Courses = () => {
     // handle click 
 
     const handleSelect = (courses) => {
-        setSelectItem([...selectItem,courses]);
+        const isExist = selectItem.find((item) => item.id == courses.id);
+        let count = courses.credit;
+        if (isExist) {
+            return alert('You cant take more than one course');
+        }
+        else {
+            selectItem.forEach((item) => {
+                count = count + item.credit;
+            })
+            if (count > 20) {
+                return alert('You cant take more than 20 hours credit')
+            }
+            else {
+                setTotal(count);
+                const remainingCredit = 20 - count;
+                setRemaining(remainingCredit)
+                setSelectItem([...selectItem, courses])
+            }
+        }
     }
 
     return (
@@ -41,9 +63,9 @@ const Courses = () => {
                     ))
                 }
             </div>
-            {/* cart */}
-            <div className="w-1/3">
-                <Carts></Carts>
+            {/* carts */}
+            <div className="w-[312px]">
+                <Carts remaining={remaining} total={total} selectItem={selectItem}></Carts>
             </div>
         </div>
     );
