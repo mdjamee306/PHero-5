@@ -2,8 +2,10 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Carts from "../Carts/Carts";
-// // toast 
-// import toast, { Toaster } from 'react-hot-toast'; 
+// toastify 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
+
 
 const Courses = () => {
     const [courses, setCourses] = useState([]);
@@ -22,14 +24,18 @@ const Courses = () => {
         const isExist = selectItem.find((item) => item.id == courses.id);
         let count = courses.credit;
         if (isExist) {
-            return alert('You cant take more than one course');
+            return toast.error('You cant take more than one course', {
+                position: toast.POSITION.TOP_CENTER
+              });
         }
         else {
             selectItem.forEach((item) => {
                 count = count + item.credit;
             })
             if (count > 20) {
-                return alert('You cant take more than 20 hours credit')
+                return toast.error('You cant take more than 20 credit', {
+                    position: toast.POSITION.TOP_CENTER
+                  });
             }
             else {
                 setTotal(count);
