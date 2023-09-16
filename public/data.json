@@ -4,71 +4,71 @@
         "img": "https://i.ibb.co/QN64rWW/Rectangle-2-1.png",
         "title": "Introduction to Algorithms",
         "description": "Vital in computer science, step-by-step problem-solving processes crucial for software development",
-        "price": 29.99,
-        "credit": 75
+        "price": 25000,
+        "credit": 2
     },
     {
         "id": 3,
         "img": "https://i.ibb.co/cDcVzXq/Rectangle-2-2.png",
         "title": "Introduction to C++ for DSA",
         "description": "C++ for DSA Introduction: C++ language application in Data Structures and Algorithms.",
-        "price": 14.99,
-        "credit": 120
+        "price": 10000,
+        "credit": 10
     },
     {
         "id": 4,
         "img": "https://i.ibb.co/9nMtzx6/Rectangle-2-3.png",
         "title": "Basic Data Structures",
         "description": "Fundamental  components  for  organizing  and manipulating  data   efficiently read to click see more...",
-        "price": 24.99,
-        "credit": 90
+        "price": 35000,
+        "credit": 5
     },
     {
         "id": 5,
         "img": "https://i.ibb.co/6JsbHzL/Rectangle-2-4.png",
         "title": "Introduction to OOP Python",
         "description": " Object-Oriented Programming principles using Python for software design and development.",
-        "price": 9.99,
-        "credit": 150
+        "price": 19000,
+        "credit": 5
     },
     {
         "id": 6,
         "img": "https://i.ibb.co/3ckz0bN/Rectangle-2-5.png",
         "title": "Software Engineering",
         "description": " A systematic approach to design, develop, and maintain reliable, efficient, and scalable software systems",
-        "price": 39.99,
-        "credit": 60
+        "price": 23000,
+        "credit": 2
     },
     {
         "id": 7,
         "img": "https://i.ibb.co/4fbp7zQ/Rectangle-2-6.png",
         "title": "AWS, Cloud Computing",
         "description": "A leading provider of cloud computing services, offering a vast array of scalable, reliable solutions globally.",
-        "price": 12.99,
-        "credit": 80
+        "price": 35000,
+        "credit": 5
     },
     {
         "id": 8,
         "img": "https://i.ibb.co/6rYZmDK/Rectangle-3.png",
         "title": "Database (MySQL)",
         "description": "An open-source relational database management system, widely used for data storage, retrieval, and management in web applications.",
-        "price": 49.99,
-        "credit": 50
+        "price": 19000,
+        "credit": 5
     },
     {
         "id": 1,
         "img": "https://i.ibb.co/yQXbwbz/Rectangle-2.png",
         "title": "Introduction to C Programming",
         "description": "Efficient language for software development, known for versatility  see more...",
-        "price": 19.99,
-        "credit": 100
+        "price": 15000,
+        "credit": 1
     },
     {
         "id": 9,
         "img": "https://i.ibb.co/dQj3NfJ/Rectangle-3-1.png",
         "title": "Problem-Solving Part",
         "description": "A critical aspect of software development, involving analysis, creative thinking, and systematic resolution of technical challenges.",
-        "price": 34.99,
-        "credit": 70
+        "price": 23000,
+        "credit": 2
     }
 ]
